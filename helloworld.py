@@ -1,3 +1,5 @@
+print(f"NEW USER REGISTRATION")
+
 username=input("Please enter your name")
 
 address=input("Please enter your address")
