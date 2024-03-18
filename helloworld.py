@@ -1,15 +1,42 @@
-print(f"NEW USER REGISTRATION")
+# Program to accept new user details and print the user details to the user.
 
-username=input("Please enter your name")
+username="null"
+address="null"
+phoneno="null"
 
-address=input("Please enter your address")
+# function to get new user details.
 
-phoneno=input("Please enter your phoneno")
+def new_user_reg(): 
 
-print(user_name)
+    global  username
+    global  address
+    global phoneno
+    
+    print(f"\n NEW USER REGISTRATION")
 
-print(address)
+    username=input("\n Please enter your name")
 
-print(phoneno)
+    address=input("\n Please enter your address")
+
+    phoneno=input("\n Please enter your phoneno")
+
+#function to display the user details to the user.
+    
+def display_user_reg():
+
+    print("\n USER DETAILS : ")
+
+    print(username)
+
+    print(address)
+
+    print(phoneno)
 
 
+def main():
+    
+    new_user_reg()
+    display_user_reg()
+
+
+main()
